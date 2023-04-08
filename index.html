@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/html/recomenda.html">
+    <link rel="stylesheet" href="./src/html/sobre.html">
+    <link rel="shortcut icon" href="/src/imgs/toush.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;500&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+        
+        body {
+            background-color: #404040;
+            margin: auto;
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        }
+        
+        header {
+            width: 480px;
+            margin: auto;
+        }
+        
+        h1 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-weight: bolder;
+            border: 5px solid black;
+            background-color: red;
+            margin: 30px;
+            padding: 20px;
+        }
+        
+        h2 {
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-weight: bolder;
+            text-decoration: underline;
+            border: 2px solid black;
+            margin: 30px;
+            padding: 30px;
+            background-color: black;
+        }
+        
+        div {
+            text-align: center;
+        }
+        
+        .container {
+            position: relative;
+            width: 420px;
+            margin: 13px;
+            margin-top: 14px;
+            display: inline-block;
+        }
+        
+        img {
+            width: 100%;
+            height: 272px;
+        }
+        
+        .container:hover .sobrepo {
+            opacity: 1;
+            height: 100%;
+        }
+        
+        .sobrepo {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 0%;
+            opacity: 0;
+            background-color: black;
+            overflow: hidden;
+            transition: 0.4s ease;
+        }
+        
+        .textoimg {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-family: 'Shrikhand', Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 30%;
+            width: 100%;
+        }
+        
+        a {
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            text-decoration: none;
+            padding: 2px;
+            border: 10px solid rgb(255, 0, 0);
+            background-color: red;
+            border-radius: 20px;
+            transition: box-shadow 0.5s ease;
+        }
+        
+        a:hover {
+            box-shadow: 10px 10px 10px rgb(98, 14, 14)
+        }
+    </style>
+    <title>Piloto</title>
+</head>
+<body>
+    <header>
+        <h1>Seja Bem-Vindo</h1>
+        <h2>Escolha a Aba passando o mouse/dedo por cima das imagens</h2>
+    </header>
+    <main>
+            <div>
+                <section class="container">
+                    <p><img class="img" src="/src/imgs/fate-animes.webp" alt="">
+                    <section class="sobrepo">
+                        <article class="textoimg">
+                            <p>Aba de Animes</p>
+                            <p><a href="./src/anime.html">Clique aqui</a></p>
+                        </article>
+                    </section>
+                </section>
+                
+                <section class="container">
+                    <p><img class="img" src="/src/imgs/591db2e0bb7cbff19cba800da63503c6.gif" alt="">
+                    <section class="sobrepo">
+                        <article class="textoimg">
+                            <p>Aba de Mangás</p>
+                            <p><a href="/aba-mangas/mangas.html">Clique aqui</a></p>
+                        </article>
+                    </section>
+                </section>
+                
+                <section class="container">
+                    <p><img class="img" src="/src/imgs/tumblr_cfa3a1383c955a2429ff2a827d93ef3f_45bdc76d_540.webp" alt="">
+                    <section class="sobrepo">
+                        <article class="textoimg">
+                            <p>Aba de Webtoons</p>
+                            <p><a href="/aba-webtoons/webtoons.html">Clique aqui</a></p>
+                        </article>
+                    </section>
+                </section>
+            </div>
+    </main>
+</body>
+</html>
