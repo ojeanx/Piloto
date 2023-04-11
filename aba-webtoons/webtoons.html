@@ -4,218 +4,253 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piloto</title>
-
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@100;300;500&display=swap');
+
         body {
-    background-color: rgb(44, 44, 44);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
+            background-color: rgba(226, 212, 212, 0.925);
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            padding: 15px;
+        }
 
-header {
-    background-color: rgb(216, 102, 102);
-}
+        header {
+            padding: 10px;
+            padding-bottom: 50px;
+            max-width: 1200px;
+            min-width: 420px;
+            min-height: 250px;
+            margin: auto;
+            margin-bottom: 40px;
+            background-color: rgb(245, 245, 245);
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 10px 10px 10px black;
+        }
 
-main {
-    background-color: rgb(44, 44, 44);
-}
+        header > p {
+            color: black;
+        }
+        
+        main {
+            margin: auto;
+            max-width: 700px;
+            padding: 25px;
+            background-color: #ffff;
+            border: 3px solid black;
+            box-shadow: 10px 10px 10px black;
+        }
+        
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            border: 5px solid rgb(255, 0, 0);
+            background-color: rgb(255, 0, 0);
+            padding: 10px;
+            border-radius: 30px;
+        }
+        
+        picture {
+            text-align: justify;
+        }
+        
+        h1 {
+            text-align: center;
+            color: red;
+            font-size: 50px;
+        }
+        
+        img {
+            width:100%;
+            height: 500px;
+        }
+        
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+        }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
+        .especificacoes {
+            color: rgb(255, 255, 255);
+            border: 5px solid rgb(255, 0, 0);
+            background-color: red;
+            width: 100px;
+            border-radius: 30px;
+            padding: 10px;
+        }
 
-picture {
-    text-align: justify;
-}
+        .titulo {
+            font-size: 30px;
+        }
 
+        .ler {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
 
-img {
-    width: 480px;
-    height: 500px;
-}
-
-p {
-    color: white;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.sinopse {
-    font-size: 30px;
-    color: blue;
-    padding: 10px;
-}
-
-.ler {
-    font-size: 25px;
-    color: red;
-}
-
-.titulo {
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    padding: 30px;
-    border: none;
-    margin: 0;
-    text-decoration: none;
-}
-
-.titulo2 {
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-}
-
-.titulo3 {
-    font-size: 17px;
-    text-align: center;
-    padding: 5px;
-}
-
-.titulos {
-    text-align: center;
-    color: red;
-    font-size: 40px;
-    border: 10px solid rgb(150, 10, 10);
-    border-radius: 50px;
-    padding: 10px;
-    text-decoration: underline;
-    margin: 20px;
-}
-
-/*li {
-    color: rgb(0, 255, 34);black;
-    border: 3px solid rgb(0, 255, 34);
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px;
-    width: 130px;
-    margin: 2px;
-}*/
-
-/*.categorias {
-    color: rgb(0, 255, 34);black;
-    border: 3px solid rgb(0, 255, 34);
-    list-style-type: none;
-    padding: 10px;
-    width: 130px;
-    margin: 2px;
-    display: inline-block;
-}*/
-
-
-    </style>
+        </style>
+    <title>Piloto</title>
 </head>
-
 <body>
-    
     <header>
         <h1 class="titulo">Bem-Vindo a aba de Webtoons</h1>
-        <p class="titulo3">Webtoon é um termo usado para descrever webcomics ou manhwas sul-coreanos que são publicados online. O portal web Coreano Daum criou um serviço de webtoon, em 2003, assim como a Naver, em 2004. Estes serviços regularmente disponibilizam webtoons de maneira</p>
-        <nav><a href="/index.html">Voltar<a/></nav>
+        <p>Webtoon é um termo usado para descrever webcomics ou manhwas sul-coreanos que são publicados online. O portal web Coreano Daum criou um serviço de webtoon, em 2003, assim como a Naver, em 2004. Estes serviços regularmente disponibilizam webtoons de maneira</p>
+        <p>Abaixo, está uma recomendação de 50 webtoons diferentes, espero que goste =D</p>
     </header>
     
     <main>
-        <div>
-            <h1 class="titulos">Lookism</h1>
-            <p class="sinopse">Sinopse:</p>
-            <p>Em uma sociedade onde aparência significa tudo, Park Hyumg Suk, pequeno, gordo e não atraente, sofre bullying diariamente, mas nunca falou a sua mãe super trabalhadeira sobre isso. Um dia, quando sua mãe o vê sofrendo bullying, ela o envia para uma escola melhor. Mas infelizmente, ele descobre que sua nova escola é tão cruel quanto a anterior. Uma noite, ele acorda e descobre que de repente ficou alto, forte e incrivelmente bonito. Quando volta para a cama e encontra o seu corpo antigo corpo dormindo. Ele agora tem uma mente e dois corpos. Toda vez que um dorme, o outro corpo acorda, e toda vez que um acorda o outro dorme. Com medo de sofrer bullying novamente na nova escola, ele decide usar o seu novo corpo para ir à escola. Mas como será isso? Será que ele finalmente será aceito?</p>
-            <p class="sinopse">Categorias:</p>
-            <ul class="sobrepo">
-                <li>Drama</li>
-                <li>Escolar</li>
-                <li>Seinen</li>
-                <li>Sobrenatural</li>
-            </ul>
-            <picture><img src="/aba-webtoons/img/webtoons/Lookism.png" alt=""></picture>
-            <p><a class="sobrepro" href="#">Leia aqui</a></p></div>
+        
+        
+        <h1 class="titulos">Lookism</h1>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
+        <p>Em uma sociedade onde aparência significa tudo, Park Hyumg Suk, pequeno, gordo e não atraente, sofre bullying diariamente, mas nunca falou a sua mãe super trabalhadeira sobre isso. Um dia, quando sua mãe o vê sofrendo bullying, ela o envia para uma escola melhor. Mas infelizmente, ele descobre que sua nova escola é tão cruel quanto a anterior. Uma noite, ele acorda e descobre que de repente ficou alto, forte e incrivelmente bonito. Quando volta para a cama e encontra o seu corpo antigo corpo dormindo. Ele agora tem uma mente e dois corpos. Toda vez que um dorme, o outro corpo acorda, e toda vez que um acorda o outro dorme. Com medo de sofrer bullying novamente na nova escola, ele decide usar o seu novo corpo para ir à escola. Mas como será isso? Será que ele finalmente será aceito?</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
+        <picture><img src="/aba-webtoons/img/webtoons/Lookism.png" alt=""></picture>
         
         <h1 class="titulos">How To Figth</h1>
-        <p class="sinopse">Sinopse:</p>
-        <p>Hobin, um estudante intimidado, sem querer surgiu com um novo canal no NewTube. A partir desse momento, sua vida mudou. Como ele irá aprender a lutar e fazer um bom conteúdo? Como ele administrará essa mudança em sua vida e até onde essa mudança vai? Ação, Drama, Comédia, e com um toque de Romance!</p>
-        <p class="sinopse">Categorias:</p>
+        <p class="especificacoes">Gêneros</p>
         <ul>
-            <li>Artes Marciais</li>
-            <li>Ação</li>
-            <li>Comédia</li>
-            <li>Drama</li>
-            <li>Escolar</li>
-            <li>Romance</li>
-            <li>Seinen</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
         </ul>
+        <p class="especificacoes">Sinopse</p>
+        <p>Hobin, um estudante intimidado, sem querer surgiu com um novo canal no NewTube. A partir desse momento, sua vida mudou. Como ele irá aprender a lutar e fazer um bom conteúdo? Como ele administrará essa mudança em sua vida e até onde essa mudança vai? Ação, Drama, Comédia, e com um toque de Romance!</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/how to figth.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
         
         <h1 class="titulos">Quest Supremacy</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
         <p>Kim soohyun é um aluno normal do ensino médio que não é bom nos estudos, em lutas ou sendo bonito. De repente, ele viu uma janela de quests bem à frente de seus olhos. após receber os poderes de um jogo [Sistema] do nada, como nosso herói enfrentará os desafios que estão por vir?</p>
-        <p class="categorias">Drama</p>
-        <p class="categorias">Escolar</p> 
-        <p class="categorias">Fantasia</p>
-        <p class="categorias">Ficção</p> 
-        <p class="categorias">Shounen</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/quest supremacy.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
         
         <h1 class="titulos">Eleceed</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
         <p>Kaiden - Um usuário misterioso de habilidade que se esconde dentro do corpo de um gato de rua. Mais tarde, ele é pego por Jiwoo depois de ser ferido após uma briga com outro usuário de habilidade. Ele tem uma personalidade teimosa e mandona. Jiwoo - um garoto do ensino médio enérgico e falador que adora gatos. Ele é muito gentil e também parece ter uma habilidade especial.</p>
-        <p class="categorias">Ação Comedia Sobrenatural</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/eleceed.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The Beginning After The End</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
         <p>Um rei “o homem mais poderoso do império”, o rei Grey morreu após ser envenenado. Agora ele renasceu como uma criança em outro mundo, um lugar onde a tecnologia não é tão avançada como era em seu reino, mas fazendo contraste com isso, a magia existe nesse novo mundo.</p>
-        <p class="categorias">Artes Marciais Aventura Ação Drama Fantasia Magia Romance Super Poderes</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/the beginning after the end.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Solo Leveling</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
         <p>Dez anos atrás, depois do “Portal” que conecta o mundo real com um mundo de montros se abriu, algumas pessoas comuns receberam o poder de caçar os monstros do portal. Eles são conhecidos como caçadores. Porém, nem todos os caçadores são fortes. A história conta sobre o caçador mais fraco se tornando o mais forte.</p>
-        <p class="categorias">Aventura Ação Fantasia Shounen</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/Solo Leveling.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">I Became The Male Lead's Adopted Daughter</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
         <p>"Vou adotar uma criança." A decisão impulsiva do duque Paul Voreoti chocou a todos na mansão. Ele não apenas a fez sua filha, mas também deu a ela o nome de uma 'besta' que apenas membros diretos da linhagem poderiam receber.</p>
-        <p class="categorias">Drama Fantasia Romance Shoujo</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/i became the male lead's adopted daughter (2).png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
-
         <h1 class="titulos">Mercenary Enrollment</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
         <p>Yu Ijin foi o único sobrevivente de uma queda de avião quando ainda era criança. Depois de se tornar um mercenário por 10 anos para sobreviver, ele retornou para sua família em sua cidade natal.</p>
-        <p class="categorias">Aventura Ação Drama Escolar Ficção Seinen</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/mercenary enrollment.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The Greatest Estate Designer</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
         <p>Kim Suho, que é um engenheiro civil, se tornou um nobre dentro de um romance. E daí? Meu estado está prestes a cair? Então ele deve ser salvo. Para projetar, construir e vender. A oportunidade especial esperada em todo o continente! O transporte perfeito, distrito educacional mais alto, área de floresta agradável e uma vida imobiliária Premium única através do Barão Frontera que todos estavam esperando. Um contrato por ordem de chegada!</p>
-        <p class="categorias">Ação Drama Fantasia Shounen Sobrenatural</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/the greatest estate designer.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Kill The Hero</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse</p>
         <p>Um dia, o mundo se transformou em um ‘jogo’. ‘Dungeons’ e ‘monstros’ apareceram nas cidades e os ‘jogadores’ que receberam a autoridades dos ‘deuses’ surgiram. Se Jun-Lee, o mestre da guilda do Messias, que traria a salvação ao mundo, e confiando nisso, eu me tornei um de seus companheiros. Mas… Ele não era um herói e nem mesmo o messias, como o mundo o considerava. Ele é um herói nojento com a ambição de governar o mundo. Eu morri pelo fio de sua lâmina na última dungeon… Ou era isso que eu pensava. O anúncio que ouvi no momento em que morri… “[Iniciando o jogo]”. Eu voltei ao passado, quando ainda não tinha despertado como um jogador. E dessa vez, serei eu que irei CAÇÁ-LO.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/kill the hero.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
-
+        
         <h1 class="titulos">is This Warrior Real</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Nunca teve um herói assim antes! Ele é um herói ou um demônio? Kang Hansoo foi teletransportado para outro mundo com seus colegas de classe. Seus colegas ficaram maravilhados com o novo mundo que possuía coisas novas como magia, mas Hansoo era o único que queria voltar para casa. “Por que eu vou largar minha caminha quentinha pra se aventurar nesse mundo…?” Mesmo a própria deusa disse que se eu não estivesse disposto a fazer isso, não havia nada que ela poderia me forçar a fazer e prometeu me levar de volta para a Terra. Ela me teletransportou, mas… Quando abri meus olhos, eu percebi que ainda estava no mesmo mundo de merda! Todos os meus amigos sumiram e a única coisa no meu redor eram monstros!! Uma deusa me enganou…? Como que eu vou voltar pra casa…? E como caralhos eu vou sobreviver aqui…?</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/is This Warrior Real.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Regressor Instruction Manual</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Um dia, fui convocado para este mundo.</p>
         <p>Feras surgiram e uma crise incrível veio.</p>
         <p>Meus talentos não poderiam ser piores.</p>
@@ -225,71 +260,149 @@ p {
         <p>Você tem que aproveitar tudo para sobreviver.</p>
         <p>"O que tem isso?"</p>
         <p>“Vou usar tudo o que tenho para sobreviver!”</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/regressor instruction manual.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Murim Login</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Uma era onde caçadores prosperam caçando monstros que saem dos Portais. Jin Tae-Kyung é um Hunter de rank baixo que pega uma máquina RV, acidentalmente entra no jogo, o qual é em um mundo de artes marciais. Depois de muitos altos e baixos, Tae-Kyung é capaz de fugir deste mundo. A força e habilidades, que adquiriu em Murim foram capazes de serem levadas para o mundo real. Isso o possibilita a um boa caça... mas ele decide retornar ao mundo de Murim, para cuidar de seus amigos NPC.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/murim login.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Wind Breaker</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Jo Ja-Hyun (Jay) é o Presidente do Conselho estudantil da Taeyang (Sunny) High. ele não é somente um aluno inteligente mas um ciclista incrível com ótimas técnicas. enquanto você segue a bicicleta dele, irá conhecer seus amigos, amor e as aventuras</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/wind breaker.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">A Stepmother's Marchen</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>A viúva de ferro, a viúva-aranha, a caçadora de homens, a bruxa do castelo de Neuschwanstein, a vergonha das nobres damas... Essas eram todas as palavras usadas para descrever a marquesa Shuli Von Neuschwanstein. Apesar de receber críticas tão duras de todos, ela persistiu em criar seus 'filhos', deixados para trás por seu falecido marido. No dia do casamento do filho mais velho, ela sentiu que havia finalmente amarrado todas as pontas soltas e poderia viver o resto de sua vida pacificamente. No entanto, ela estava terrivelmente enganada ao se ver envolvida em um acidente e morrer enquanto deixava o castelo no dia do casamento. Ao abrir os olhos, ela se vê acordando no dia do funeral do marido, sete anos antes. 'Eu me recuso a sofrer mais. Não vou viver como no passado uma segunda vez!'</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/A Stepmother's Marchen.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Damn Reincarnation</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>O guerreiro Hamel partiu em uma aventura com seus companheiros para derrotar os Reis Demônios, mas depois de morrer pouco antes da batalha final com os Reis Demônios…. "Uau." "Que porra é essa!" Ele foi reencarnado como descendente de seu companheiro guerreiro, Vermouth. Hamel — não, Eugene Lionheart renasceu com o sangue do Great Vermouth. 'Meu corpo anterior tinha talento suficiente para ser confundido com um gênio, mas este... simplesmente não há comparação.' Com um corpo que tinha especificações mais altas desde o início, ele mostrou um crescimento explosivo que superou em muito o que havia alcançado em sua vida anterior. Junto com as razões desconhecidas para sua reencarnação veio a realidade incômoda de ter que conviver com demônios. Ele se deparou com um mundo que o fez questionar tudo em que acreditava. Dotado desse corpo extraordinário desde o nascimento, como Eugene, ele começa a percorrer o caminho inacabado de sua vida anterior.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/damn reincarnation.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Death God Of The Drifting Moon</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Ele está na parte mais profunda do Jianghu. Mantenha os olhos bem abertos se não quiser ser arrastado para o abismo.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/death god of the drifting moon.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Doctor Player</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Um dia, um milagre aconteceu. [Você despertou como jogador!] [Classe: Cirurgião] Um médico de um lugar chamado Terra. Ele transmigrou para o corpo de Raymond, um curandeiro fracassado de rank F! Com as habilidades do jogador, começa a carreira médica de Raymond, adquirindo conhecimento da medicina moderna.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/doctor player.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Existence</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Um dia, era uma horda de formigas, no outro, um grande dinossauro. Essa era a última reencarnação de um ser que experienciou dezenas de milhares de reencarnações e vidas. Ele nasceu como um humano que possuía o poder de cada forma de vida que ele já foi. Por que ele tinha uma h</p>
-            <picture><img src="/aba-webtoons/img/webtoons/existence.png" alt=""></picture>
-            <p><a class="ler" href="#">Leia aqui</a></p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
+        <picture><img src="/aba-webtoons/img/webtoons/existence.png" alt=""></picture>
+
 
         <h1 class="titulos">Get Schooled</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>As técnicas de ensino de Hwajin Na são bastante violentas para quem trabalha no Ministério da Educação. Dito isso, quando as punições não parecem funcionar nem mesmo com o pior dos valentões da escola, não há homem melhor para o trabalho. Às vezes, você não pode obter uma boa educação até que esses valentões aprendam uma lição.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/get schooled.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Hectopascal</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Uma enorme quantidade de dinheiro é dada ao grande lutador Park Hanjun, que estava frustrado e não tinha mais nada a perder. Olho por olho, dente por dente! -“Eu certamente retribuirei todo sofrimento que passei!” Sua raiva implacável explode e sua vingança começa.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/hectopascal.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">How To Get My Husband On My Side</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Me tornei ‘Rudbeckia’, uma coadjuvante em uma história de fantasia, uma vilã que morre pelas mãos de seu marido. O pior pai do mundo me achou outro parceiro para um casamento político. O problema é, essa pessoa é o marido que vai me matar! Primeiro, preciso achar uma forma para viver. Preciso parecer o mais inofensiva possível para o povo do norte e proteger a irmãzinha do meu marido que matei na história original. Não seria capaz de salvar minha vida se fingisse estar apaixonada pelo meu marido? “Me apaixonei por você à primeira vista!” “Então, por favor, me poupe!”</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/how to get my husband on my side.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">I'll Be The Matriarch In This Life</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Florentia reencarnou como a filha ilegítima da família mais rica do império. Ela tinha pensado que tudo iria bem no futuro. Mas seu pai havia falecido, seus parentes a deixaram na porta, e a família honrada de que ela tanto se orgulhava estava completamente arruinada...</p>
         <p>Mas isso é real?</p>
         <p>Ela bebeu um pouco (muito) e foi atropelada por uma carruagem.</p>
@@ -303,65 +416,135 @@ p {
         <p>“Não. Quero dizer.”</p>
                 
         <p>Tudo bem, tanto o Segundo Príncipe quanto a família são meus!</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/i'll be the matriarch in this life.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">I'm Not That Kind Of Talent</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Eu não sou esse tipo de pessoa. Eu, Dion Hart, sou um enfermo que vomita sangue sempre que estou estressado. No entanto, ao mesmo tempo, sou o Conde Hart, que de alguma forma foi incompreendido e considerado uma pessoa forte e, portanto, temido por todos.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/i'm not that kind of talent.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Jungle Juice</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Ele se tornou um inseto humano devido a uma misteriosa substância para insetos ‘Jungle Juice’. Um dia, Su-chan Jang, um jovem estudante universitário que vivia escondendo seu segredo, tornou-se visível para todos, e agora ele entra na sociedade dos humanos insetos e luta contra a lógica da carne fraca</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/jungle juice.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Nan Hao & Shang Feng</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>A obra conta a história de jovens colegiais envolvidos em ”altas traquinagens” em situações cotidianas tão bestas que acabam sendo muito engraçadas.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/nan hao & shang feng.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Nano Machine</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p> Depois de ser desprezado e ter sua vida posta em perigo, um órfão do Culto Demoníaco, Cheon Yeo-Woon, recebe uma visita inesperada de seu descendente do futuro que insere uma nano máquina em seu corpo, mudando drasticamente a vida de Cheon Yeo-Woon após sua ativação.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/nano machine.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">One Hit Teacher, Master Baek</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Ele aprendeu as arte marciais mais fortes que existem apenas para ser assassinado e reencarnar como um oficial de uma aldeia rural como Mestre Baek, O Professor do One Hit!</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/one hit teacher, master baek.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Please Give Me The Pacifier</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Fui eliminada após ser traída por meu amigo mais confiável. Fechei os olhos e jurei me vingar, mas eu me tornei filha de um duque em Heiron, o império que tem estado em desavença com reino de Cillophia? O problema era: “Abuu!” “Oh, que chato. Basta levar sua chupeta. “Instintivamente chupei o que entrou na minha boca, abri abruptamente os olhos. “O que eu estava fazendo até agora?” Tive que chupar uma chupeta para que meu cérebro funcionasse bem! Sem chupeta, ela era apenas um bebê com a cabeça cheia de campos de flores! Esta foi a maior humilhação da grande maga Hella. “Já que as coisas são assim, vamos voltar depois de roubar informações classificadas.” Secretamente, sem ser visto por ninguém! Hoje, Sherina estava novamente rastejando desesperadamente entre pilares e árvores. “Aquela .. de quem é aquela garota? Quem está cuidando dessa garota assim?! ” O grito de raiva atrás de Sherina não era da sua conta.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/please give me the pacifier.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Secret Love</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Este drama relata como um home se apaixona por uma mulher que matou a sua amada. Uma história sobre um homem que não acredita em amor e uma mulher que acredita no amor mas é traída pelo amor.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/secret love.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Superhumans's Game</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Seo Moonyeop, o herói que salvou a humanidade ao sacrificar a si mesmo, é o superhumano mais forte.Quando ele, que tinha sido dado como morto, de repente volta para um mundo pacífico 17 anos depois, o e-sport começa a passar por mudanças drásticas.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/superhumans's game.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The Tales Of Demons And Gods</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>A história trata sobre a trajetória de Nie Li, o espiritualista demoníaco mais forte sendo derrotado e voltando no tempo para quando tinha apenas 13 anos.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/the tales of demons and gods.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The Novel's Extra</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Acordando, Kim Hajin encontrava-se num mundo familiar, mas em um corpo desconhecido.</p>
     
         <p>Um mundo que ele criou e uma história que ele escreveu, mas nunca terminou.</p>
@@ -373,11 +556,18 @@ p {
         <p>A única pista para escapar é ficar perto do enredo principal.</p>
                 
         <p>No entanto, ele logo descobre que esse mundo não é exatamente idêntico à sua criação…</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/the novel's extra.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The S-Classes That I Raised</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Um caçador de classe F.</p>
         <p>E ainda por cima, um irmão mais velho de classe F, que não consegue nem mesmo chegar perto dos pés de seu irmão mais novo, um classe S.</p>
                 
@@ -385,28 +575,57 @@ p {
                 
         <p>Desta vez, ao invés de cometer os mesmos erros, viverei minha vida tranquilamente.</p>
         <p>Foi o que eu pensei... mas os Ranks S são todos um pouco... estranhos e por alguma razão... eu não consigo escapar."</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/the s-classes that i raised.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Sister, I Am The Queen In This Life</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Seu amado, sua irmã e seus pais. Ariadne retorna 14 anos no passado, o dia em que foi traída por todos. Mas desta vez, ela vai se vingar de todos e se tornar a rainha.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/sister, i am the queen in this life.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The Dark Magician Transmigrates After 66666 Years</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Diablo Volfir, um poderoso mago, foi selado por eras devido aos esquemas dos 12 deuses, mas 6.6666 anos se passaram desde então, e ele desce à terra mais uma vez!</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/The Dark Magician Transmigrates After 66666 Years.png" alt=""></picture>
 
         <h1 class="titulos">To Not Die</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>A história segue uma pessoa comum que acorda no meio de uma crise ao descobrir que sua cidade enlouqueceu e as pessoas atacam umas às outras sem qualquer motivo. O segredo para sobreviver está em "Pressionar X para Não Morrer", um tipo de super-reflexo que subitamente algumas pessoas parecem ter desenvolvido.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/to not die.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Swordmaster's Youngest Son</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Jin Runcandel é o filho mais novo do maior Mestre Espadachim.</p>
     
         <p>Depois de ser expulso de seu clã, ele encontra um destino trágico… mas antes de morrer, um Deus dá a ele uma segunda chance.</p>
@@ -414,82 +633,167 @@ p {
         <p>Agora, ele deve usar seu novo poder para o bem.</p>
                 
         <p>Poderá Jin se tornar o Mestre Espadachim mais forte do mundo e cumprir as expectativas de seu grande potencial?</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/swordmaster's youngest son.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Survival Story Of A Sword King In A Fantasy</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>"Você foi selecionado como o mais apto." "Com o seu talento, a taxa de sobrevivência [5%] em Selha Latna é mínima." "Você deseja cometer suicídio? S/N" "X-" Com uma chance de sobrevivência de 5%. 22 anos. Incontáveis batalhas contra cães demoníacos. Neste inferno; Eu venho sobrevivendo de forma solitária. Oculto atrás do nível 5, em conjunto com os atributos secretos chocantes! Este é o registro da sobrevivência extrema do mais forte espadachim do nível 5, Ryu Han Bin, que foi jogado neste mundo com apenas uma espada em mãos..</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/survival story of a sword king in a fantasy world.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Return Of The Flowery Mountain Sect</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Chung Myung, o 13º discípulo da Seita da Grande Montanha Florida, um dos 3 Grandes Espadachins, Santo da Espada de Flor de Ameixa, derrotou Chun Ma, que trouxe destruição e desordem ao mundo. Após a batalha, ele dá seu último suspiro no topo da montanha-sede da Seita de Adoração do Diabo.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/return of the flowery mountain sect.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
  
         <h1 class="titulos">SSS-Class Revival Hunter</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Na misteriosa Torre, parecida com uma masmorra de RPG, Confúcio Kim vive uma existência mundana, invejando todos os caçadores de estrelas. Um dia, seu desejo por mais é concedido com uma habilidade lendária para copiar as habilidades dos outros... ao custo de sua vida. Antes que ele possa entender, ele é morto pelo caçador nº 1, o Imperador das Chamas! Mas isso ativa sua habilidade e agora ele copiou uma nova, a capacidade de viajar no tempo após a morte. Como Confúcio usará essas habilidades para superar a concorrência e chegar ao topo?</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/sss-class revival hunter - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Omniscient Reader's Viewpoint</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>É sobre Kim Dokja, um assalariado de 28 anos cujo contrato está prestes a expirar, e que tem como único prazer na vida ler sua webnovel favorita no metrô para casa.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/omniscient reader's viewpoint - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The Max Leveled Hero Will Return</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Um fraco príncipe de um país insignificante, Davey. Depois de entrar em coma, sua alma escapou para um templo onde às almas dos heróis se reunem. Ele treinou por mil anos e agora voltou como um herói de nível máximo! “Vocês me esperem, vou enfrentar cada um de vocês!”. A refrescante história de vingança de Davey apenas começou.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/the max leveled hero will return - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The Great Mage Returns After 4,000 years</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>O pior aluno da Academia Westroad e a vergonha da Família Blake. Uma nova alma entra no corpo sem vida de Fray Blake, o garoto que não conseguiu aguentar sua dolorosa vida e optou pela morte. O Grande Mago Lucas Trawman ganhou a chance de se vingar ao reencarnar no corpo do menino! Esse é o começo da nova aventura do Grande Mago que retornou após 4000 anos!</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/the great mage returns after 4,000 years - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">The God Of High School</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Entre alunos de várias escolas do Ensino Médio da Coreia do Sul, um sairá vencedor e terá um desejo seu atendido pela organização, qualquer desejo, sem questionamentos. Na competição, Mori conhece lutadores que praticam diferentes estilos de artes marciais misturadas à técnica do Poder Emprestado.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/the god of high school - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Second Life Ranker</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Quando seu irmão volta para casa morto, Yeon-woo encontra no antigo relógio de seu irmão a resposta para seu desaparecimento repentino cinco anos atrás, agora sabendo a verdade, Yeon-woo parte em direção ao Obelisco, a torre do deus do sol, um lugar onde muitos universos e dimensões se intercalam.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/second life ranker - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Release That Witch</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Um engenheiro reencarnou em outro mundo e se tornou um príncipe. Esse lugar se assemelha muito à Idade Média Europeia, mas, ao mesmo tempo parece ser diferente. Bruxas existem de verdade e até mesmo possuem poderes mágicos! Poderes mágicos são forças de produção! Salvem as bruxas, libertem as forças de produção! Abram o mapa, lutem contra demônios, acabem com as conspirações, escalem a árvore da ciência e tecnologia e abram o caminho para o "farming hardcore"!</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/release that witch - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Tomb Raider King</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Devido a relíquias dentro dessas tumbas, a humanidade começou a cobiçá-las e tomá-las para si. Porém o que ninguém sabia é que essas relíquias concediam poderes a seus portadores, todavia nem todos foram capazes de dominar essas relíquias e tornaram-se escravos desses deuses.</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/tomb raider king - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Tower Of God</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>O que você deseja? Dinheiro? Glória? Poder? Vingança? Ou algo maior que tudo isso? O que quer que você deseje, "isso está aqui".</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/tower of god - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
 
         <h1 class="titulos">Overgeared</h1>
-        <p class="sinopse">Sinopse:</p>
+        <p class="especificacoes">Gêneros</p>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p class="especificacoes">Sinopse:</p>
         <p>Shin Youngwoo é um perdedor na vida que também é fortemente endividado com uma companhia de seguros.</p>
         <p>Ele mora com seus pais desapontados e sua brilhante irmã mais nova, que é uma das melhores alunas de sua escola. Mesmo em jogos, como o popular jogo VRMMORPG, ele é um perdedor total. Mas um dia, enquanto em uma busca, ele milagrosamente encontra um Livro Lendário que pode dar a quem lê a Classe Lendária nunca antes vista! Ele estava planejando vendê-lo por um monte de dinheiro, mas a sorte sempre foi sua pior característica.</p>
         <p>Através de uma mudança infeliz da situação, seu sonho durou pouco, pois ele foi forçado a usar o item para si mesmo. Sua vida mudou para sempre desde aquele dia fatídico...</p>
+        <p class="ler"><a href="#">Leia aqui</a></p></div>
         <picture><img src="/aba-webtoons/img/webtoons/overgeared - 2.png" alt=""></picture>
-        <p><a class="ler" href="#">Leia aqui</a></p>
     </main>
+    <footer><a href="/index.html">Voltar</a>></footer>
 </body>
-</html> 
+</html>
